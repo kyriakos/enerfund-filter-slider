@@ -8,22 +8,6 @@ import "./enerfund-filter-slider.scss";
 
 export default class extends Component {
 
-    static propTypes = {
-        selectedMin: PropTypes.number.isRequired,
-        selectedMax: PropTypes.number.isRequired,
-        includeFormElements: PropTypes.bool,
-        valueChanged: PropTypes.func,
-        formName: PropTypes.string
-    };
-
-    static defaultProps = {
-        selectedMin: 0,
-        selectedMax: 0,
-        includeFormElements: false,
-        valueChanged: undefined,
-        formName: ''
-    };
-
     constructor(props) {
         super(props);
         this.state = {
@@ -55,7 +39,7 @@ export default class extends Component {
         } else inputElements = '';
 
         return <div className="enerfundFilterSlider">
-            <h2>{this.props.title}</h2>
+            <h3>{this.props.title}</h3>
             <Rheostat min={this.props.min} max={this.props.max}
                       values={[this.state.selectedMin, this.state.selectedMax]}
                       onValuesUpdated={this.valuesUpdated.bind(this)}/>
