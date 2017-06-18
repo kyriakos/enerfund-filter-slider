@@ -1,5 +1,11 @@
+@import "rheostat-custom";
+
+body {
+  background: black;
+}
 .enerfundFilterSlider {
   .leftCol, .rightCol {
+    color: white;
     font-size: .8em;
     width: 50%;
     display: inline-block;
