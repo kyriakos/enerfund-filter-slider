@@ -39,7 +39,7 @@ export default class extends Component {
         } else inputElements = '';
 
         return <div className="enerfundFilterSlider">
-            <h3>{this.props.title}</h3>
+            <h4>{this.props.title}</h4>
             <Rheostat min={this.props.min} max={this.props.max}
                       values={[this.state.selectedMin, this.state.selectedMax]}
                       onValuesUpdated={this.valuesUpdated.bind(this)}/>
