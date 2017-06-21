@@ -1,6 +1,6 @@
 {
   "name": "enerfund-filter-slider",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "enerfund-filter-slider React component",
   "main": "lib/index.js",
   "module": "es/index.js",
